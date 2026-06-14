@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAJU&Uクイックコメ数チェッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div
+        style="max-width: 90%; width: 640px; display: flex; flex-direction: column; text-align: center; margin: 0 auto;">
+        <h2 id="allCommentCount">合計 0 コメント</h2>
+        <div style="display: flex; flex-direction: row; height: 36px">
+            <input type="text" id="channelHandleInput" placeholder="チャンネルのハンドルを入力">
+            <button id="submitButton">追加</button>
+        </div>
+        <p style="color: white; display: none;" id="loadingMessage">取得中</p>
+        <div id="channelDataWrapper"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
